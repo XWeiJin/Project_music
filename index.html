@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-Music</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./CSS/Color.css">
+    <link rel="stylesheet" href="./topics.css">
+</head>
+<body class="body_top">
+<header>
+  <nav class="navbar navbar-expand-lg bg-light " >
+    <div class="container-fluid">
+      <a class="navbar-brand text-info" href="#">W-Music</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./topics_music.html" target="_self">音樂</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_self" data-bs-toggle="modal" data-bs-target="#exampleModal">登入/註冊</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">會員登入</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-text"> 
+          <label for="user" class="form-label">帳號</label>
+          <input type="text" size="20" name="user" id="user" class="form-control">
+        </div>
+        <div class="form-text"> 
+          <label for="pass" class="form-label">密碼</label>
+          <input type="password" size="20" name="pass" id="pass" class="form-control">
+        </div>
+        <div class="form-check-inline mt-3">
+          <input type="checkbox" name="check" id="check" class="form-check-input">
+          <label for="check" class="form-check-label">同意服務條款</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success btn-sm me-auto">註冊</button>
+        <button type="button" class="btn btn-primary">登入</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="container-fluid con_1">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Music.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/YuQi-1059.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/YuQi-981.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>    
+<!-- ----------------- -->      
+    
+  <div class="container con_2">
+    <section class="section_1">
+    <div class="row">
+      <div class="col-md-3 mt-5 mb-5">
+        <div class="list-group ">
+          <button type="button" class="list-group-item list-group-item-action active text-center bt_top" aria-current="true">
+              音樂歌手分類
+          </button>
+          <button type="button" class="list-group-item list-group-item-action bt1 text-center">
+            <a href="./page/Chinese.html" target="iframe">華語歌手</a>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action bt2 text-center">
+            <a href="./page/English.html" target="iframe">英文歌手</a>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action bt3 text-center">
+            <a href="./page/Nihon.html" target="iframe">日文歌手</a>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action bt4 text-center">
+            <a href="./page/Korean.html" target="iframe">韓文歌手</a>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action bt5 text-center">
+            <a href="./page/full.html" target="iframe">全部歌手</a>
+          </button>
+        </div>
+      </div>
+      
+      <div class="col-md-8 mt-5 mb-1">
+        <iframe src="./page/full.html" frameborder="0" scrolling="1" name="iframe" class="iframe">
+        </iframe>
+      </div>
+    </section>
+    <section class="section_2 mb-1">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+          <img src="./images/YuQi-1272.jpg" alt="Error" id="0_h">
+        </div>
+        <div class="col-md-3">
+          <div class="text-center sce_2" id="1_h">關於我們</div>
+          <h5>W-Music</h5>
+          <p>收集了華語、英語、韓語、日文的TOP歌手，我們將會持續的更新，我們將會在未來帶來更多的服務及更多歌手，請繼續的支持我們，敬請期待。</p>
+        </div>
+        <div class="col-md-2">
+          <div class="text-center sce_2" id="2_h">常見問題</div>
+          <h5>音質問題:</h5>
+          <p>可能是設備受到干擾或連接問題所導致。</p>
+          <h5>平台問題:</h5>
+          <p>因是練習用，所以品質無法保證，如需要請到正式的串流影音平台上使用，敬請諒解。</p>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center sce_2" id="3_h">版權問題</div>
+          <p>跨平台專題練習專用，因此非營利，無版權相關的問題，如有將下架，感謝您的支持。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class=" d-flex justify-content-center">
+  <div class="row d-flex flex-column justify-content-center">
+    <div class="col-md-12">
+      <ul>
+        <li class="d-inline"><a href="#0_h">關於我們</a></li>
+        <li class="d-inline"><a href="#1_h">版權問題</a></li>
+        <li class="d-inline"><a href="#2_h">隱私權問題</a></li>
+        <li class="d-inline"><a href="#3_h">常見問題</a></li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <p class="text-center">© 跨平台專題練習 非商業用途</p>
+    </div>
+  </div>
+</footer>
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/jquery-3.7.1.min.js"></script>
+</body>
+</html>

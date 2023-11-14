@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W-Music</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./CSS/Color.css">
+  <link rel="stylesheet" href="./topics.css">
+</head>
+
+<body class="body_top_m">
+<header>
+  <nav class="navbar navbar-expand-lg bg-light " >
+    <div class="container-fluid">
+      <a class="navbar-brand text-info" href="#">W-Music</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./topics_music.html" target="_self">音樂</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_self" data-bs-toggle="modal" data-bs-target="#exampleModal">登入/註冊</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">會員登入</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+      <div class="modal-body">
+        <div class="form-text"> 
+          <label for="user" class="form-label">帳號</label>
+          <input type="text" size="20" name="user" id="user" class="form-control">
+        </div>
+        <div class="form-text"> 
+          <label for="pass" class="form-label">密碼</label>
+          <input type="password" size="20" name="pass" id="pass" class="form-control">
+        </div>
+        <div class="form-check-inline mt-3">
+          <input type="checkbox" name="check" id="check" class="form-check-input">
+          <label for="check" class="form-check-label">同意服務條款</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success btn-sm me-auto">註冊</button>
+        <button type="button" class="btn btn-primary">登入</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="container">
+    <div class="row d-flex flex-column align-items-center justify-content-center">
+      <div class="col-md-12 mt-3">
+        <ul class="d-flex justify-content-center align-items-center m-0 p-0 music_ul">
+          <li class="d-inline m-3 music_li">
+            <a data-bs-toggle="collapse" href="#collapseExample_1" role="button" aria-expanded="false" aria-controls="collapseExample">華語歌曲</a>
+          </li>
+          <li class="d-inline m-3 music_li">
+            <a data-bs-toggle="collapse" href="#collapseExample_2" role="button" aria-expanded="false" aria-controls="collapseExample">英文歌曲</a>
+          </li>
+          <li class="d-inline m-3 music_li">
+            <a data-bs-toggle="collapse" href="#collapseExample_3" role="button" aria-expanded="false" aria-controls="collapseExample">日文歌曲</a>
+          </li>
+          <li class="d-inline m-3 music_li">
+            <a data-bs-toggle="collapse" href="#collapseExample_4" role="button" aria-expanded="false" aria-controls="collapseExample">韓文歌曲</a>
+          </li>
+          <!-- <li class="d-inline m-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_4" aria-expanded="false" aria-controls="collapseExample">全部歌曲</button>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <div class="collapse music_coll_1" id="collapseExample_1">
+          <div class="card card-body music_1 p-1">
+            <table  class="table table-borderless music_1body">
+              <tbody>
+                <tr>
+                  <td><a href="./music/詹雯婷 - 訣愛.mp3" data-song="詹雯婷 - 訣愛">詹雯婷 - 訣愛</a></td>
+                  <td><a href="./music/周杰倫 - 手寫的從前.mp3" data-song="周杰倫 - 手寫的從前">周杰倫 - 手寫的從前</a></td>
+                  <td><a href="./music/周杰倫 - 稻香.mp3" data-song="周杰倫 - 稻香">周杰倫 - 稻香</a></td>
+                  <td><a href="./music/周杰倫 - 告白氣球.mp3" data-song="周杰倫 - 告白氣球">周杰倫 - 告白氣球</a></td>
+                  <td><a href="./music/伍佰 - Last dance.mp3" data-song="伍佰 - Last dance">伍佰 - Last dance</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/伍佰 - 愛你一萬年.mp3" data-song="伍佰 - 愛你一萬年">伍佰 - 愛你一萬年</a></td>
+                  <td><a href="./music/伍佰 - 挪威的森林.mp3" data-song="伍佰 - 挪威的森林">伍佰 - 挪威的森林</a></td>
+                  <td><a href="./music/五月天 -  將軍令.mp3" data-song="五月天 -  將軍令">五月天 -  將軍令</a></td>
+                  <td><a href="./music/五月天 - 乾杯.mp3" data-song="五月天 - 乾杯">五月天 - 乾杯</a></td>
+                  <td><a href="./music/五月天 - 後來的我們.mp3" data-song="五月天 - 後來的我們">五月天 - 後來的我們</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/G.E.M. - 來自天堂的魔鬼 AWAY.mp3" data-song="G.E.M. - 來自天堂的魔鬼 AWAY">G.E.M. - 來自天堂的魔鬼 AWAY</a></td>
+                  <td><a href="./music/G.E.M. - 光年之外.mp3" data-song="G.E.M. - 光年之外">G.E.M. - 光年之外</a></td>
+                  <td> <a href="./music/G.E.M. - 泡沫.mp3" data-song="G.E.M. - 泡沫">G.E.M. - 泡沫</a></td>
+                  <td><a href="./music/黃霄雲 - 星辰大海.mp3" data-song="黃霄雲 - 星辰大海">黃霄雲 - 星辰大海</a></td>
+                  <td><a href="./music/黃霄雲 - 要不然我們就這樣一萬年.mp3" data-song="黃霄雲 - 要不然我們就這樣一萬年">黃霄雲 - 要不然我們就這樣一萬年</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/黃霄雲 - 還可以愛嗎.mp3" data-song="黃霄雲 - 還可以愛嗎">黃霄雲 - 還可以愛嗎</a></td>
+                  <td><a href="./music/張碧晨、毛不易 - 黑月光.mp3" data-song="張碧晨、毛不易 - 黑月光">張碧晨、毛不易 - 黑月光</a></td>
+                  <td><a href="./music/界 - 袁娅维.mp3" data-song="界 - 袁娅维">界 - 袁娅维</a></td>
+                  <td><a href="./music/韋禮安 - 如果可以.mp3" data-song="韋禮安 - 如果可以">韋禮安 - 如果可以</a></td>
+                  <td><a href="./music/柯柯柯啊 - 櫻花樹下的約定.mp3" data-song="柯柯柯啊 - 櫻花樹下的約定">柯柯柯啊 - 櫻花樹下的約定</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="collapse  music_coll_2" id="collapseExample_2">
+          <div class="card card-body music_2 p-1">
+            <table class="table table-borderless music_2body">
+             <tbody>
+                <tr>
+                  <td><a href="./music/Avicii - Broken Arrows.mp3" data-song="Avicii - Broken Arrows">Avicii - Broken Arrows</a></td>
+                  <td><a href="./music/Avicii - The Nights.mp3" data-song="Avicii - The Nights">Avicii - The Nights</a></td>
+                  <td><a href="./music/Avicii - Waiting For Love.mp3" data-song="Avicii - Waiting For Love">Avicii - Waiting For Love</a></td>
+                  <td><a href="./music/Adele - Rolling in the Deep.mp3" data-song="Adele - Rolling in the Deep">Adele - Rolling in the Deep</a></td>
+                  <td><a href="./music/Coldplay - A Sky Full Of Stars.mp3" data-song="Coldplay - A Sky Full Of Stars">Coldplay - A Sky Full Of Stars</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/Coldplay - Hymn For The Weekend.mp3" data-song="Coldplay - Hymn For The Weekend">Coldplay - Hymn For The Weekend</a></td>
+                  <td><a href="./music/Coldplay - Paradise.mp3" data-song="Coldplay - Paradise">Coldplay - Paradise</a></td>
+                  <td><a href="./music/Justin Bieber - Baby ft. Ludacris.mp3" data-song="Justin Bieber - Baby ft. Ludacris">Justin Bieber - Baby ft. Ludacris</a></td>
+                  <td><a href="./music/Justin Bieber - Love Yourself.mp3" data-song="Justin Bieber - Love Yourself">Justin Bieber - Love Yourself</a></td>
+                  <td><a href="./music/Justin Bieber - Sorry.mp3" data-song="Justin Bieber - Sorry">Justin Bieber - Sorry</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/Lady Gaga - Always Remember Us This Way.mp3" data-song="Lady Gaga - Always Remember Us This Way">Lady Gaga - Always Remember Us This Way</a></td>
+                  <td><a href="./music/Lady Gaga - Bad Romance.mp3" data-song="Lady Gaga - Bad Romance">Lady Gaga - Bad Romance</a></td>
+                  <td><a href="./music/Lady Gaga - Poker Face.mp3" data-song="Lady Gaga - Poker Face">Lady Gaga - Poker Face</a></td>
+                  <td><a href="./music/Taylor Swift - All Too Well.mp3" data-song="Taylor Swift - All Too Well">Taylor Swift - All Too Well</a></td>
+                  <td><a href="./music/Taylor Swift - Blank Space.mp3" data-song="Taylor Swift - Blank Space">Taylor Swift - Blank Space</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/Taylor Swift - Love Story.mp3" data-song="Taylor Swift - Love Story">Taylor Swift - Love Story</a></td>
+                  <td><a href="./music/Sia - Unstoppable.mp3" data-song="Sia - Unstoppable">Sia - Unstoppable</a></td>
+                  <td><a href="./music/Shakira - Try Everything.mp3" data-song="Shakira - Try Everything">Shakira - Try Everything</a></td>
+                  <td><a href="./music/Frozen - Let It Go.mp3" data-song="Frozen - Let It Go">Frozen - Let It Go</a></td>
+                  <td><a href="./music/YUQI - Flowers.mp3" data-song="YUQI - Flowers">YUQI - Flowers</a></td>
+                </tr>
+             </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="collapse  music_coll_3" id="collapseExample_3">
+          <div class="card card-body music_3 p-1">
+            <table class="table table-borderless music_3body">
+              <tbody>
+                <tr>
+                  <td><a href="./music/YOASOBI - アイドル.mp3" data-song="YOASOBI - アイドル">YOASOBI - アイドル</a></td>
+                  <td><a href="./music/YOASOBI - 怪物.mp3" data-song="YOASOBI - 怪物">YOASOBI - 怪物</a></td>
+                  <td><a href="./music/YOASOBI - 祝福.mp3" data-song="YOASOBI - 祝福">YOASOBI - 祝福</a></td>
+                  <td><a href="./music/eill - フィナーレ.mp3" data-song="eill - フィナーレ">eill - フィナーレ</a></td>
+                  <td><a href="./music/eill - プレロマンス.mp3" data-song="eill - プレロマンス">eill - プレロマンス</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/eill - 片っぽ.mp3" data-song="eill - 片っぽ">eill - 片っぽ</a></td>
+                  <td><a href="./music/LiSA - 往け.mp3" data-song="LiSA - 往け">LiSA - 往け</a></td>
+                  <td><a href="./music/LiSA - 炎.mp3" data-song="LiSA - 炎">LiSA - 炎</a></td>
+                  <td><a href="./music/LiSA - 紅蓮華.mp3" data-song="LiSA - 紅蓮華">LiSA - 紅蓮華</a></td>
+                  <td><a href="./music/優里 - メリーゴーランド.mp3" data-song="優里 - メリーゴーランド">優里 - メリーゴーランド</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/優里 - レオ.mp3" data-song="優里 - レオ">優里 - レオ</a></td>
+                  <td><a href="./music/優里 - 花鳥風月.mp3" data-song="優里 - 花鳥風月">優里 - 花鳥風月</a></td>
+                  <td><a href="./music/米津玄師 -  灰色と青.mp3" data-song="米津玄師 -  灰色と青">米津玄師 -  灰色と青</a></td>
+                  <td><a href="./music/米津玄師 - Lemon.mp3" data-song="米津玄師 - Lemon">米津玄師 - Lemon</a></td>
+                  <td><a href="./music/DAOKO × 米津玄師 - 打上花火.mp3" data-song="DAOKO × 米津玄師 - 打上花火">DAOKO × 米津玄師 - 打上花火</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/三浦サリー - アイシテル.mp3" data-song="三浦サリー - アイシテル">三浦サリー - アイシテル</a></td>
+                  <td><a href="./music/小さな恋のうた - by天月.mp3" data-song="小さな恋のうた - by天月">小さな恋のうた - by天月</a></td>
+                  <td><a href="./music/薇爾莉特 - 僕が死のうと思ったのは.mp3" data-song="薇爾莉特 - 僕が死のうと思ったのは">薇爾莉特 - 僕が死のうと思ったのは</a></td>
+                  <td><a href="./music/鈴木愛理 - heart notes.mp3" data-song="鈴木愛理 - heart notes">鈴木愛理 - heart notes</a></td>
+                  <td><a href="./music/Kvi Baba - TOMBI.mp3" data-song="Kvi Baba - TOMBI">Kvi Baba - TOMBI</a></td>
+                </tr>
+              </tbody>
+             </table>
+          </div>
+        </div>
+        <div class="collapse  music_coll_4" id="collapseExample_4">
+          <div class="card card-body  music_4 p-1">
+            <table class="table table-borderless music_4body">
+              <tbody>
+                <tr>
+                  <td><a href="./music/IU - Blueming.mp3" data-song="IU - Blueming">IU - Blueming</a></td>
+                  <td><a href="./music/IU - eight.mp3" data-song="IU - eight">IU - eight</a></td>
+                  <td><a href="./music/IU - above the time.mp3" data-song="IU - above the time">IU - above the time</a></td>
+                  <td><a href="./music/(G)I-DLE - Queencard.mp3" data-song="(G)I-DLE - Queencard">(G)I-DLE - Queencard</a></td>
+                  <td><a href="./music/(G)I-DLE - Nxde.mp3" data-song="(G)I-DLE - Nxde">(G)I-DLE - Nxde</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/(G)I-DLE - TOMBOY.mp3" data-song="(G)I-DLE - TOMBOY">(G)I-DLE - TOMBOY</a></td>
+                  <td><a href="./music/Ailee - I will show you.mp3" data-song="Ailee - I will show you">Ailee - I will show you</a></td>
+                  <td><a href="./music/Ailee - 첫눈처럼 너에게 가겠다.mp3" data-song="Ailee - 첫눈처럼 너에게 가겠다">Ailee - 첫눈처럼 너에게 가겠다</a></td>
+                  <td><a href="./music/BLACKPINK - How You Like That.mp3" data-song="BLACKPINK - How You Like That">BLACKPINK - How You Like That</a></td>
+                  <td><a href="./music/BLACKPINK - DDU-DU DDU-DU.mp3" data-song="BLACKPINK - DDU-DU DDU-DU">BLACKPINK - DDU-DU DDU-DU</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/BLACKPINK - BOOMBAYAH.mp3" data-song="BLACKPINK - BOOMBAYAH">BLACKPINK - BOOMBAYAH</a></td>
+                  <td><a href="./music/BTS - Butter.mp3" data-song="BTS - Butter">BTS - Butter</a></td>
+                  <td><a href="./music/BTS - Dynamite.mp3" data-song="BTS - Dynamite">BTS - Dynamite</a></td>
+                  <td><a href="./music/BTS - FIRE.mp3" data-song="BTS - FIRE">BTS - FIRE</a></td>
+                  <td><a href="./music/TAEYANG - EYES, NOSE, LIPS.mp3" data-song="TAEYANG - EYES, NOSE, LIPS">TAEYANG - EYES, NOSE, LIPS</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./music/Girls Generation - FOREVER 1.mp3" data-song="Girls Generation - FOREVER 1">Girls Generation - FOREVER 1</a></td>
+                  <td><a href="./music/I.O.I - I Love You, I Remember You.mp3" data-song="I.O.I - I Love You, I Remember You">I.O.I - I Love You, I Remember You</a></td>
+                  <td><a href="./music/IU - heart.mp3" data-song="IU - heart">IU - heart</a></td>
+                  <td><a href="./music/IU - Celebrity.mp3" data-song="IU - Celebrity">IU - Celebrity</a></td>
+                  <td><a href="./music/IU - Nitpicking.mp3" data-song="IU - Nitpicking">IU - Nitpicking</a></td>
+                </tr>
+              </tbody>
+             </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="music-container" id="music-container">
+          <!-- music info  -->
+          <div class="music-info">
+            <h4 id="title">title</h4>
+            <div class="progress-container" id="progress-container">
+              <div class="progress" id="progress"></div>
+            </div>
+          </div>
+          <!-- audio -->
+          <audio src="" id="audio"></audio>
+          <div class="img-container">
+            <!-- <img src="/images/wong.jpg" alt="img-container" id="cover"> -->
+            <a href="#top">TOP</a>
+          </div>
+          <div class="navigation">
+            <button id="prev" class="action-btn">
+              <i class="fas fa-backward material-symbols-outlined">skip_previous</i>
+            </button>
+            <button id="play" class="action-btn big">
+              <i class="fas fa-play material-symbols-outlined">pause</i>
+            </button>
+            <button id="next" class="action-btn">
+              <i class="fasfa-forward material-symbols-outlined ">skip_next</i>
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+  
+<footer class=" d-flex justify-content-center">
+  <div class="row d-flex flex-column justify-content-center">
+    <div class="col-md-12">
+      <ul>
+        <li class="d-inline"><a href="#0_h">關於我們</a></li>
+        <li class="d-inline"><a href="#1_h">版權問題</a></li>
+        <li class="d-inline"><a href="#2_h">隱私權問題</a></li>
+        <li class="d-inline"><a href="#3_h">常見問題</a></li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <p class="text-center">© 跨平台專題練習 非商業用途</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/jquery-3.7.1.min.js"></script>
+<script src="./JS/music.js"></script>
+</body>
+
+</html>

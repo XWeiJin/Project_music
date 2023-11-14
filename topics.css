@@ -1,0 +1,451 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body_top header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 1px #757474;
+}
+.body_top main {
+  background: linear-gradient(rgba(150, 100, 100, 0.6), rgba(255, 255, 255, 0.5));
+  z-index: -1;
+}
+.body_top main .con_1 {
+  padding: 0;
+}
+.body_top main .con_1 .carousel-inner img {
+  height: 400px;
+}
+.body_top main .con_2 {
+  padding: 0;
+}
+.body_top main .con_2 .section_1 .row .bt_top {
+  z-index: -1;
+  font-size: 1.25rem;
+}
+.body_top main .con_2 .section_1 .row .bt1, .body_top main .con_2 .section_1 .row .bt3 {
+  background-color: var(--textcolor11);
+  display: block;
+}
+.body_top main .con_2 .section_1 .row .bt1 a, .body_top main .con_2 .section_1 .row .bt3 a {
+  display: block;
+  text-decoration: none;
+  color: var(--textcolor40);
+  font-size: larger;
+  font-weight: bold;
+}
+.body_top main .con_2 .section_1 .row .bt2, .body_top main .con_2 .section_1 .row .bt4 {
+  background-color: var(--textcolor31);
+  display: block;
+}
+.body_top main .con_2 .section_1 .row .bt2 a, .body_top main .con_2 .section_1 .row .bt4 a {
+  display: block;
+  text-decoration: none;
+  color: var(--textcolor40);
+  font-size: larger;
+  font-weight: bold;
+}
+.body_top main .con_2 .section_1 .row .bt5 {
+  background-color: var(--textcolor59);
+  display: block;
+}
+.body_top main .con_2 .section_1 .row .bt5 a {
+  display: block;
+  text-decoration: none;
+  color: var(--textcolor50);
+  font-size: larger;
+  font-weight: bold;
+}
+.body_top main .con_2 .section_1 .row .bt1:hover, .body_top main .con_2 .section_1 .row .bt2:hover, .body_top main .con_2 .section_1 .row .bt3:hover, .body_top main .con_2 .section_1 .row .bt4:hover {
+  background-color: var(--textcolor48);
+}
+.body_top main .con_2 .section_1 .row .bt1:hover a:hover, .body_top main .con_2 .section_1 .row .bt2:hover a:hover, .body_top main .con_2 .section_1 .row .bt3:hover a:hover, .body_top main .con_2 .section_1 .row .bt4:hover a:hover {
+  color: var(--textcolor23);
+}
+.body_top main .con_2 .section_1 .row .bt5:hover {
+  background-color: var(--textcolor48);
+}
+.body_top main .con_2 .section_1 .row .bt5:hover a:hover {
+  color: var(--textcolor02);
+}
+.body_top main .con_2 .section_1 .row .iframe {
+  width: 51.2vw;
+  height: 40vw;
+}
+.body_top main .con_2 .section_2 {
+  background: linear-gradient(rgba(128, 255, 128, 0.5), rgba(64, 128, 64, 0.2));
+}
+.body_top main .con_2 .section_2 img {
+  width: 20vw;
+  height: 20vw;
+}
+.body_top main .con_2 .section_2 .sce_2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--textcolor19);
+}
+.body_top main .con_2 .section_2 h5 {
+  color: var(--textcolor21);
+  font-size: 1.5rem;
+}
+.body_top main .con_2 .section_2 p {
+  font-family: "標楷體";
+  font-size: 1.15rem;
+}
+.body_top footer {
+  height: 20vh;
+  background: var(--textcolor24);
+}
+.body_top footer ul {
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+.body_top footer ul li {
+  margin: 1vw;
+}
+.body_top footer ul li a {
+  text-decoration: none;
+  color: var(--textcolor12);
+  font-family: "標楷體";
+  font-size: large;
+}
+.body_top footer ul li :hover {
+  color: var(--textcolor23);
+}
+.body_top footer div p {
+  color: var(--textcolor21);
+  font-size: x-large;
+  font-family: "標楷體";
+}
+
+.body_top_m header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 1px #757474;
+}
+.body_top_m main {
+  background: linear-gradient(rgba(150, 100, 100, 0.6), rgba(255, 255, 255, 0.5));
+}
+.body_top_m main .music_ul .music_li a {
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  border: 0px solid var(--textcolor52);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--textcolor14);
+  font-family: "標楷體";
+  font-size: 1.25rem;
+  transform: 2s border-width linear 1s;
+  transform: 2s border-color linear 1s;
+}
+.body_top_m main .music_ul .music_li a:hover {
+  color: var(--textcolor02);
+  border-width: 0px 0px 3px 0px;
+  border-radius: 3px;
+}
+.body_top_m main .music_coll_1 .music_1 {
+  background-color: var(--textcolor56);
+}
+.body_top_m main .music_coll_1 .music_1 .music_1body {
+  margin: 5px 5px 5px 0px;
+}
+.body_top_m main .music_coll_1 .music_1 .music_1body td {
+  padding: 0;
+}
+.body_top_m main .music_coll_1 .music_1 .music_1body a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-family: "標楷體";
+  color: var(--textcolor27);
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+}
+.body_top_m main .music_coll_1 .music_1 .music_1body a:hover {
+  color: var(--textcolor02);
+  background-color: var(--textcolor40);
+  border-radius: 5px;
+}
+.body_top_m main .music_coll_2 .music_2 {
+  background-color: var(--textcolor57);
+}
+.body_top_m main .music_coll_2 .music_2 .music_2body {
+  margin: 5px 5px 5px 0px;
+}
+.body_top_m main .music_coll_2 .music_2 .music_2body td {
+  padding: 0;
+}
+.body_top_m main .music_coll_2 .music_2 .music_2body a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--textcolor58);
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+.body_top_m main .music_coll_2 .music_2 .music_2body a:hover {
+  color: var(--textcolor04);
+  background-color: var(--textcolor32);
+  border-radius: 5px;
+}
+.body_top_m main .music_coll_3 .music_3 {
+  background-color: var(--textcolor11);
+}
+.body_top_m main .music_coll_3 .music_3 .music_3body {
+  margin: 5px 5px 5px 0px;
+}
+.body_top_m main .music_coll_3 .music_3 .music_3body td {
+  padding: 0;
+}
+.body_top_m main .music_coll_3 .music_3 .music_3body a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-family: "標楷體";
+  color: var(--textcolor30);
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+.body_top_m main .music_coll_3 .music_3 .music_3body a:hover {
+  color: var(--textcolor05);
+  background-color: var(--textcolor28);
+  border-radius: 5px;
+}
+.body_top_m main .music_coll_4 .music_4 {
+  background-color: var(--textcolor16);
+}
+.body_top_m main .music_coll_4 .music_4 .music_4body {
+  margin: 5px 5px 5px 0px;
+}
+.body_top_m main .music_coll_4 .music_4 .music_4body td {
+  padding: 0;
+}
+.body_top_m main .music_coll_4 .music_4 .music_4body a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--textcolor39);
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+.body_top_m main .music_coll_4 .music_4 .music_4body a:hover {
+  color: var(--textcolor50);
+  background-color: var(--textcolor60);
+  border-radius: 5px;
+}
+.body_top_m main .music-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  z-index: 10;
+}
+.body_top_m main .music-container .music-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  opacity: 0;
+  /* width: calc(100% - 40px); */
+  width: 95%;
+  padding: 10px 10px 10px 100px;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: -1;
+}
+.body_top_m main .music-container .music-info .music-info h4 {
+  display: flex;
+  margin: 0;
+}
+.body_top_m main .music-container .music-info .progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 95%;
+}
+.body_top_m main .music-container .music-info .progress-container .progress {
+  background-color: #fe8dab;
+  border-radius: 5px;
+  height: 100%;
+  width: 60%;
+  transition: width 0.1s linear;
+}
+.body_top_m main .music-container .img-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.body_top_m main .music-container .img-container a {
+  position: absolute;
+  color: var(--textcolor11);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1px;
+  transform: translateX(-30px);
+}
+.body_top_m main .music-container .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body_top_m main .music-container .navigation .action-btn {
+  background-color: #fff;
+  border: 0;
+  color: #dfbddf;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.body_top_m main .music-container .navigation .big {
+  color: #cdc2d0;
+  font-size: 30px;
+}
+.body_top_m .music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+.body_top_m footer {
+  height: 20vh;
+  background: var(--textcolor24);
+}
+.body_top_m footer ul {
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+.body_top_m footer ul li {
+  margin: 1vw;
+}
+.body_top_m footer ul li a {
+  text-decoration: none;
+  color: var(--textcolor12);
+  font-family: "標楷體";
+  font-size: large;
+}
+.body_top_m footer ul li :hover {
+  color: var(--textcolor23);
+}
+.body_top_m footer div p {
+  color: var(--textcolor21);
+  font-size: x-large;
+  font-family: "標楷體";
+}
+
+.body_full {
+  background: linear-gradient(rgba(234, 84, 85, 0.2), rgba(98, 58, 162, 0.7));
+}
+.body_full .full {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.body_full .full .card {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.body_full .full .card img {
+  width: 15rem;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.body_ch {
+  background: linear-gradient(rgba(234, 84, 85, 0.2), rgba(98, 58, 162, 0.7));
+}
+.body_ch .chinese {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.body_ch .chinese .card {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.body_ch .chinese .card img {
+  width: 15rem;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.body_en {
+  background: linear-gradient(rgba(234, 84, 85, 0.2), rgba(98, 58, 162, 0.7));
+}
+.body_en .english {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.body_en .english .card {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.body_en .english .card img {
+  width: 15rem;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.body_ni {
+  background: linear-gradient(rgba(234, 84, 85, 0.2), rgba(98, 58, 162, 0.7));
+}
+.body_ni .nihon {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.body_ni .nihon .card {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.body_ni .nihon .card img {
+  width: 15rem;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.body_ko {
+  background: linear-gradient(rgba(234, 84, 85, 0.2), rgba(98, 58, 162, 0.7));
+}
+.body_ko .korean {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.body_ko .korean .card {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.body_ko .korean .card img {
+  width: 15rem;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}/*# sourceMappingURL=topics.css.map */
