@@ -395,14 +395,29 @@
         .card{
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
-            img{
-                width:15rem ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardimg{
+                margin-top: 1rem;
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+                border-radius: 50%;
+               img{
+                width: 15rem;
                 height: 15rem;
                 background-position: center;
                 background-size: cover;
-                border-radius: 50%;
+                // border-radius: 50%;
                 margin: 0 auto;
+                transition: all 0.2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                } 
             }
+            
         }
     }
 }
@@ -417,14 +432,29 @@
         .card{
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
-            img{
-                width:15rem ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardimg{
+                margin-top: 1rem;
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+                border-radius: 50%;
+               img{
+                width: 15rem;
                 height: 15rem;
                 background-position: center;
                 background-size: cover;
-                border-radius: 50%;
+                // border-radius: 50%;
                 margin: 0 auto;
+                transition: all 0.2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                } 
             }
+            
         }
     }
 }
@@ -438,14 +468,29 @@
         .card{
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
-            img{
-                width:15rem ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardimg{
+                margin-top: 1rem;
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+                border-radius: 50%;
+               img{
+                width: 15rem;
                 height: 15rem;
                 background-position: center;
                 background-size: cover;
-                border-radius: 50%;
+                // border-radius: 50%;
                 margin: 0 auto;
+                transition: all 0.2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                } 
             }
+            
         }
     }
 }
@@ -459,14 +504,29 @@
         .card{
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
-            img{
-                width:15rem ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardimg{
+                margin-top: 1rem;
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+                border-radius: 50%;
+               img{
+                width: 15rem;
                 height: 15rem;
                 background-position: center;
                 background-size: cover;
-                border-radius: 50%;
+                // border-radius: 50%;
                 margin: 0 auto;
+                transition: all 0.2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                } 
             }
+            
         }
     }
 }
@@ -480,14 +540,29 @@
         .card{
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
-            img{
-                width:15rem ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardimg{
+                margin-top: 1rem;
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+                border-radius: 50%;
+               img{
+                width: 15rem;
                 height: 15rem;
                 background-position: center;
                 background-size: cover;
-                border-radius: 50%;
+                // border-radius: 50%;
                 margin: 0 auto;
+                transition: all 0.2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                } 
             }
+            
         }
     }
 }

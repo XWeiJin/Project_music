@@ -360,14 +360,27 @@
 .body_full .full .card {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body_full .full .card img {
+.body_full .full .card .cardimg {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.body_full .full .card .cardimg img {
   width: 15rem;
   height: 15rem;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
   margin: 0 auto;
+  transition: all 0.2s;
+}
+.body_full .full .card .cardimg img:hover {
+  transform: scale(1.2);
 }
 
 .body_ch {
@@ -380,14 +393,27 @@
 .body_ch .chinese .card {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body_ch .chinese .card img {
+.body_ch .chinese .card .cardimg {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.body_ch .chinese .card .cardimg img {
   width: 15rem;
   height: 15rem;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
   margin: 0 auto;
+  transition: all 0.2s;
+}
+.body_ch .chinese .card .cardimg img:hover {
+  transform: scale(1.2);
 }
 
 .body_en {
@@ -400,14 +426,27 @@
 .body_en .english .card {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body_en .english .card img {
+.body_en .english .card .cardimg {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.body_en .english .card .cardimg img {
   width: 15rem;
   height: 15rem;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
   margin: 0 auto;
+  transition: all 0.2s;
+}
+.body_en .english .card .cardimg img:hover {
+  transform: scale(1.2);
 }
 
 .body_ni {
@@ -420,14 +459,27 @@
 .body_ni .nihon .card {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body_ni .nihon .card img {
+.body_ni .nihon .card .cardimg {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.body_ni .nihon .card .cardimg img {
   width: 15rem;
   height: 15rem;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
   margin: 0 auto;
+  transition: all 0.2s;
+}
+.body_ni .nihon .card .cardimg img:hover {
+  transform: scale(1.2);
 }
 
 .body_ko {
@@ -440,12 +492,25 @@
 .body_ko .korean .card {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body_ko .korean .card img {
+.body_ko .korean .card .cardimg {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.body_ko .korean .card .cardimg img {
   width: 15rem;
   height: 15rem;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
   margin: 0 auto;
+  transition: all 0.2s;
+}
+.body_ko .korean .card .cardimg img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=topics.css.map */
