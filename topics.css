@@ -24,56 +24,64 @@
 .body_top main .con_2 {
   padding: 0;
 }
-.body_top main .con_2 .section_1 .row .bt_top {
+.body_top main .con_2 .section_1 .row .arow_1 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.body_top main .con_2 .section_1 .row .arow_1 .bt_top {
   z-index: -1;
   font-size: 1.25rem;
 }
-.body_top main .con_2 .section_1 .row .bt1, .body_top main .con_2 .section_1 .row .bt3 {
+.body_top main .con_2 .section_1 .row .arow_1 .bt1, .body_top main .con_2 .section_1 .row .arow_1 .bt3 {
   background-color: var(--textcolor11);
   display: block;
 }
-.body_top main .con_2 .section_1 .row .bt1 a, .body_top main .con_2 .section_1 .row .bt3 a {
+.body_top main .con_2 .section_1 .row .arow_1 .bt1 a, .body_top main .con_2 .section_1 .row .arow_1 .bt3 a {
   display: block;
   text-decoration: none;
   color: var(--textcolor40);
   font-size: larger;
   font-weight: bold;
 }
-.body_top main .con_2 .section_1 .row .bt2, .body_top main .con_2 .section_1 .row .bt4 {
+.body_top main .con_2 .section_1 .row .arow_1 .bt2, .body_top main .con_2 .section_1 .row .arow_1 .bt4 {
   background-color: var(--textcolor31);
   display: block;
 }
-.body_top main .con_2 .section_1 .row .bt2 a, .body_top main .con_2 .section_1 .row .bt4 a {
+.body_top main .con_2 .section_1 .row .arow_1 .bt2 a, .body_top main .con_2 .section_1 .row .arow_1 .bt4 a {
   display: block;
   text-decoration: none;
   color: var(--textcolor40);
   font-size: larger;
   font-weight: bold;
 }
-.body_top main .con_2 .section_1 .row .bt5 {
+.body_top main .con_2 .section_1 .row .arow_1 .bt5 {
   background-color: var(--textcolor59);
   display: block;
 }
-.body_top main .con_2 .section_1 .row .bt5 a {
+.body_top main .con_2 .section_1 .row .arow_1 .bt5 a {
   display: block;
   text-decoration: none;
   color: var(--textcolor50);
   font-size: larger;
   font-weight: bold;
 }
-.body_top main .con_2 .section_1 .row .bt1:hover, .body_top main .con_2 .section_1 .row .bt2:hover, .body_top main .con_2 .section_1 .row .bt3:hover, .body_top main .con_2 .section_1 .row .bt4:hover {
+.body_top main .con_2 .section_1 .row .arow_1 .bt1:hover, .body_top main .con_2 .section_1 .row .arow_1 .bt2:hover, .body_top main .con_2 .section_1 .row .arow_1 .bt3:hover, .body_top main .con_2 .section_1 .row .arow_1 .bt4:hover {
   background-color: var(--textcolor48);
 }
-.body_top main .con_2 .section_1 .row .bt1:hover a:hover, .body_top main .con_2 .section_1 .row .bt2:hover a:hover, .body_top main .con_2 .section_1 .row .bt3:hover a:hover, .body_top main .con_2 .section_1 .row .bt4:hover a:hover {
+.body_top main .con_2 .section_1 .row .arow_1 .bt1:hover a:hover, .body_top main .con_2 .section_1 .row .arow_1 .bt2:hover a:hover, .body_top main .con_2 .section_1 .row .arow_1 .bt3:hover a:hover, .body_top main .con_2 .section_1 .row .arow_1 .bt4:hover a:hover {
   color: var(--textcolor23);
 }
-.body_top main .con_2 .section_1 .row .bt5:hover {
+.body_top main .con_2 .section_1 .row .arow_1 .bt5:hover {
   background-color: var(--textcolor48);
 }
-.body_top main .con_2 .section_1 .row .bt5:hover a:hover {
+.body_top main .con_2 .section_1 .row .arow_1 .bt5:hover a:hover {
   color: var(--textcolor02);
 }
-.body_top main .con_2 .section_1 .row .iframe {
+.body_top main .con_2 .section_1 .row .iframe_1 {
+  margin-top: 48px;
+  margin-bottom: 4px;
+}
+.body_top main .con_2 .section_1 .row .iframe_1 .iframe {
   width: 51.2vw;
   height: 40vw;
 }
@@ -124,6 +132,55 @@
   font-family: "標楷體";
 }
 
+@media screen and (max-width: 768px) {
+  .body_top main .con_2 .section_1 .row .arow_1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .body_top main .con_2 .section_1 .row .iframe_1 {
+    margin: 0;
+    height: 100vw;
+  }
+  .body_top main .con_2 .section_1 .row .iframe_1 .iframe {
+    width: 100vw;
+    height: 100vw;
+  }
+  .body_top main .con_2 .section_2 img {
+    width: 100vw;
+    height: 30vw;
+  }
+  .body_top main .con_2 .section_2 .sce_2 {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--textcolor19);
+  }
+  .body_top main .con_2 .section_2 h5 {
+    color: var(--textcolor21);
+    font-size: 1.25rem;
+  }
+  .body_top main .con_2 .section_2 p {
+    font-family: "標楷體";
+    font-size: 1rem;
+  }
+  .body_top footer {
+    height: 20vh;
+    background: var(--textcolor24);
+  }
+  .body_top footer ul {
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  .body_top footer ul li {
+    margin: 1vw;
+  }
+  .body_top footer ul li a {
+    font-size: medium;
+  }
+  .body_top footer div p {
+    font-size: large;
+  }
+}
 .body_top_m header {
   position: sticky;
   top: 0;
@@ -360,6 +417,7 @@
 .body_full .full .card {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  width: 18rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,6 +441,11 @@
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 768px) {
+  .body_full .full .card {
+    width: 400px;
+  }
+}
 .body_ch {
   background: linear-gradient(rgba(234, 84, 85, 0.2), rgba(98, 58, 162, 0.7));
 }

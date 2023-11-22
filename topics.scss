@@ -27,63 +27,72 @@
             .section_1{
                 .row{
                 // padding: 0;
-                    .bt_top{
+                    .arow_1{
+                        margin-top: 48px;
+                        margin-bottom: 48px;
+                        .bt_top{
                         z-index: -1; 
                         font-size: 1.25rem;
-                    }
-                    .bt1,.bt3{
-                        background-color: var(--textcolor11);
-                        display: block;
-                        a{
+                        }
+                        .bt1,.bt3{
+                            background-color: var(--textcolor11);
                             display: block;
-                            text-decoration: none;
-                            color: var(--textcolor40);
-                            font-size: larger;
-                            font-weight: bold;
-                        
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                color: var(--textcolor40);
+                                font-size: larger;
+                                font-weight: bold;
+                            
+                            }
+                        }
+                        .bt2,.bt4{
+                            background-color: var(--textcolor31);
+                            display: block;
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                color: var(--textcolor40);
+                                font-size: larger;
+                                font-weight: bold;
+                                
+                            }
+                        }
+                        .bt5{
+                            background-color: var(--textcolor59);
+                            display: block;
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                color: var(--textcolor50);
+                                font-size: larger;
+                                font-weight: bold;
+                                
+                            }
+                        }
+                        .bt1:hover,.bt2:hover,.bt3:hover,.bt4:hover{
+                            background-color: var(--textcolor48);
+                            a:hover{
+                                color: var(--textcolor23);
+                            }
+                        }
+                        .bt5:hover{
+                            background-color: var(--textcolor48);
+                            a:hover{
+                                color: var(--textcolor02);
+                            }
                         }
                     }
-                    .bt2,.bt4{
-                        background-color: var(--textcolor31);
-                        display: block;
-                        a{
-                            display: block;
-                            text-decoration: none;
-                            color: var(--textcolor40);
-                            font-size: larger;
-                            font-weight: bold;
+                    .iframe_1{
+                        margin-top: 48px;
+                        margin-bottom: 4px;
+                        .iframe{
+                            width: 51.2vw;
+                            height: 40vw;
                             
                         }
                     }
-                    .bt5{
-                        background-color: var(--textcolor59);
-                        display: block;
-                        a{
-                            display: block;
-                            text-decoration: none;
-                            color: var(--textcolor50);
-                            font-size: larger;
-                            font-weight: bold;
-                            
-                        }
-                    }
-                    .bt1:hover,.bt2:hover,.bt3:hover,.bt4:hover{
-                        background-color: var(--textcolor48);
-                        a:hover{
-                            color: var(--textcolor23);
-                        }
-                    }
-                    .bt5:hover{
-                        background-color: var(--textcolor48);
-                        a:hover{
-                            color: var(--textcolor02);
-                        }
-                    }
-                    .iframe{
-                        width: 51.2vw;
-                        height: 40vw;
-                        
-                    }
+                    
                 }
             }
             .section_2{
@@ -91,7 +100,6 @@
                 img{
                     width: 20vw;
                     height: 20vw;
-                    
                 }
                 .sce_2{
                     margin: 1rem 0;
@@ -138,7 +146,70 @@
         }
     }
 }
-
+@media screen and (max-width:768px){
+    .body_top{
+        main{
+            .con_2{
+                .section_1{
+                    .row{
+                        .arow_1{
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        }
+                        .iframe_1{
+                            margin: 0;
+                            height: 100vw;
+                            .iframe{
+                                width: 100vw;
+                                height: 100vw;
+                            }
+                        }
+                        
+                    }
+                }
+                .section_2{
+                    img{
+                        width: 100vw;
+                        height: 30vw;
+                    }
+                    .sce_2{
+                        margin: 1rem 0;
+                        font-size: 1rem;
+                        font-weight: bolder;
+                        color: var(--textcolor19);
+                    }
+                    h5{
+                        color: var(--textcolor21);
+                        font-size: 1.25rem;
+                    }
+                    p{
+                        font-family: "標楷體";
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        footer{
+            height:20vh;
+            background:var(--textcolor24);
+            ul{
+                margin-right: 25px;
+                margin-bottom: 20px;
+                li{
+                    margin: 1vw;
+                    a{
+                        font-size: medium;
+                    }
+                }
+            }
+            div{
+                p{
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
 
 .body_top_m{
     header{
@@ -395,6 +466,7 @@
         .card{
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
+            width: 18rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -421,7 +493,15 @@
         }
     }
 }
-
+@media screen and (max-width:768px){
+    .body_full{
+        .full{
+            .card{
+                width: 400px;
+            }
+        }
+    }
+}
 
 .body_ch{
     background: linear-gradient(rgba(234,84,85,0.2),rgba(98,58,162,0.7));
