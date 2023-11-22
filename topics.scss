@@ -223,7 +223,7 @@
         background: linear-gradient(rgba(150,100,100,0.6),rgba(255,255,255,0.5));
         .music_ul{
             .music_li{
-                
+                margin: 16px;
                 a{
                     padding: 0.5rem 0.5rem 0.25rem 0.5rem;
                     border: 0px solid var(--textcolor52);
@@ -420,7 +420,7 @@
                     color: #cdc2d0;
                     font-size: 30px;
                 }
-              }
+            }
         }
     }
     .music-container.play .music-info {
@@ -455,7 +455,65 @@
         }
     }
 }
-
+@media screen and (max-width:768px){
+    .body_top_m{
+        main{
+            .con_music{
+                .music_ul{
+                    .music_li{
+                        display: flex;
+                        margin: 0;
+                        a{
+                            padding: 0;
+                            font-size: 1rem;
+                            margin: 10px;
+                            // color: var(--textcolor05);
+                        }
+                        
+                    }
+                }
+            }
+            .music_coll_1,.music_coll_2,.music_coll_3,.music_coll_4{
+                margin-top: 1rem;
+                table{
+                    tr{
+                        td{
+                            display: block;
+                            border: 1px solid var(--textcolor40);
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+            .music-container{
+                .music-info {
+                    left: 8px;
+                }
+            }
+            
+        }
+        
+        footer{
+        height:20vh;
+        background:var(--textcolor24);
+            ul{
+                margin-right: 25px;
+                margin-bottom: 20px;
+                li{
+                    margin: 1vw;
+                    a{
+                        font-size: medium;
+                    }
+                }
+            }
+            div{
+                p{
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
 //full
 .body_full{
     background: linear-gradient(rgba(234,84,85,0.2),rgba(98,58,162,0.7));
