@@ -704,3 +704,20 @@
         }
     }
 }
+
+.body_mem{
+    .box1{
+        border: 1px solid red;
+        height: 10vw;
+        width: 30vw;
+    }
+    .box2{
+        border: 1px solid red;
+        height: 20vw;
+        width: 30vw;
+        .bt{
+            margin-top: 3.5rem;
+        }
+    }
+    
+}

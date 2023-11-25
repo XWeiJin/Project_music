@@ -618,4 +618,18 @@
 }
 .body_ko .korean .card .cardimg img:hover {
   transform: scale(1.2);
+}
+
+.body_mem .box1 {
+  border: 1px solid red;
+  height: 10vw;
+  width: 30vw;
+}
+.body_mem .box2 {
+  border: 1px solid red;
+  height: 20vw;
+  width: 30vw;
+}
+.body_mem .box2 .bt {
+  margin-top: 3.5rem;
 }/*# sourceMappingURL=topics.css.map */

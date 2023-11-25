@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./CSS/Color.css">
+    <link rel="stylesheet" href="./topics.css">
+</head>
+<body class="body_mem">
+    <div class="container">
+        <div class="row d-flex flex-column justify-content-between align-items-center">
+            <div class="col-md-12 box1"></div>
+            <div class="col-md-12 box2">
+                <div class="mt-3">
+                    <h2 class="text-center">會員註冊</h2>
+                </div>
+                <div class="mt-3">
+                    <label for="user" class="form-label">帳號</label>
+                    <input type="text" id="user" name="user" class="form-control" placeholder="text1234">
+                </div>
+                <div class="mt-3">
+                    <label for="pass" class="form-label">密碼</label>
+                    <input type="password" id="pass" name="pass" class="form-control" placeholder="4321text">
+                </div>
+                <div class="form-check-inline mt-3">
+                    <input type="checkbox" id="checkbox" name="checkbox" class="form-check-input">
+                    <label for="checkbox" class="form-check-label">同意服務條款</label>
+                </div>
+                <div class="d-flex justify-content-between bt">
+                    <div>
+                        <button class="btn btn-primary">註冊</button>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary" id="bt_OK">登入</button>
+                        <button class="btn btn-primary" id="bt_not">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 box1">
+                <div id="show"></div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/member.js"></script>
+</body>
+</html>
