@@ -620,16 +620,49 @@
   transform: scale(1.2);
 }
 
+.body_mem {
+  background: linear-gradient(rgba(150, 100, 100, 0.6), rgba(255, 255, 255, 0.5));
+  height: 100vh;
+}
 .body_mem .box1 {
-  border: 1px solid red;
   height: 10vw;
   width: 30vw;
 }
+.body_mem .box1 .show {
+  font-size: xx-large;
+  color: var(--textcolor50);
+  border-radius: 3px;
+  padding: 0.5rem;
+}
 .body_mem .box2 {
+  background-color: var(--textcolor02);
   border: 1px solid red;
+  border-radius: 10px;
   height: 20vw;
   width: 30vw;
+  padding: 1rem;
+}
+.body_mem .box2 h2 {
+  font-weight: bolder;
 }
 .body_mem .box2 .bt {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .body_mem .row_me .box1 {
+    height: 30vw;
+    width: 90vw;
+  }
+  .body_mem .row_me .box1 .show {
+    font-size: x-large;
+  }
+  .body_mem .row_me .box2 {
+    height: 100vw;
+    width: 90vw;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7));
+  }
+  .body_mem .row_me .box2 .bt {
+    margin-top: 2.5rem;
+  }
 }/*# sourceMappingURL=topics.css.map */

@@ -705,19 +705,58 @@
     }
 }
 
+
 .body_mem{
+    background: linear-gradient(rgba(150,100,100,0.6),rgba(255,255,255,0.5));
+    height: 100vh;
     .box1{
-        border: 1px solid red;
+        // border: 1px solid red;
         height: 10vw;
         width: 30vw;
+        .show{
+            font-size: xx-large;
+            color: var(--textcolor50);
+            // background-color: var(--textcolor50);
+            border-radius: 3px;
+            padding: 0.5rem;
+        }
     }
     .box2{
+        background-color: var(--textcolor02);
         border: 1px solid red;
+        border-radius: 10px;
         height: 20vw;
         width: 30vw;
+        padding: 1rem;
+        h2{
+            font-weight: bolder;
+        }
         .bt{
-            margin-top: 3.5rem;
+            margin-top: 2.5rem;
         }
     }
     
+}
+@media screen and (max-width:768px) {
+    .body_mem{
+        .row_me{
+            .box1{
+                height: 30vw;
+                width: 90vw;
+                .show{
+                    font-size: x-large;
+                }
+            }
+            .box2{
+                height: 100vw;
+                width: 90vw;
+                background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.7));
+                .bt{
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+        
+        
+    }
 }
