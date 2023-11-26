@@ -630,8 +630,8 @@
 }
 .body_mem .box1 .show {
   font-size: xx-large;
-  color: var(--textcolor50);
-  border-radius: 3px;
+  color: var(--textcolor02);
+  border-radius: 10px;
   padding: 0.5rem;
 }
 .body_mem .box2 {
