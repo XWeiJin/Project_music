@@ -514,6 +514,17 @@
         }
     }
 }
+
+
+.body_store{
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: #fff;
+        box-shadow: 3px 3px 5px 1px #757474;
+    }
+}
 //full
 .body_full{
     background: linear-gradient(rgba(234,84,85,0.2),rgba(98,58,162,0.7));
