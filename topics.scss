@@ -517,6 +517,7 @@
 
 
 .body_store{
+    background: linear-gradient(rgba(150,100,100,0.6),rgba(255,255,255,0.5));
     header{
         position: sticky;
         top: 0;
@@ -524,7 +525,54 @@
         background-color: #fff;
         box-shadow: 3px 3px 5px 1px #757474;
     }
+    .store{
+        .card{
+            margin-top: 2rem;
+            position: relative;
+            .cardimg{
+                .im1{
+                    position: absolute;
+                    transition: opacity 0.8s ease-in-out;
+                }
+                .im1:hover{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 2rem;
+        background-color: var(--textcolor48);
+        height: 6vw;
+        .ft{
+           height: 6vw;
+           .fth2{
+                width: 95%;
+                overflow: hidden;
+                .mar{
+                    display: inline-block;
+                    margin: 0;
+                    color: var(--textcolor50);
+                    white-space: nowrap;
+                    animation: marquee 5s linear infinite
+
+                }
+           }
+        }
+    }
 }
+
+@keyframes marquee{
+    // 0%{
+    //     transform: translateX(80%);
+    // }
+    // 100%{
+    //     transform: translateX(-80%);
+    // }
+    from{transform: translateX(80%)}
+    to{transform: translateX(-80%)}
+}
+
 //full
 .body_full{
     background: linear-gradient(rgba(234,84,85,0.2),rgba(98,58,162,0.7));
