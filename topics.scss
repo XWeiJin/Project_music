@@ -531,6 +531,7 @@
             position: relative;
             .cardimg{
                 .im1{
+                    height: 286px;
                     position: absolute;
                     transition: opacity 0.8s ease-in-out;
                 }
@@ -550,11 +551,11 @@
                 width: 95%;
                 overflow: hidden;
                 .mar{
-                    display: inline-block;
+                    // display: inline-block;
                     margin: 0;
                     color: var(--textcolor50);
-                    white-space: nowrap;
-                    animation: marquee 5s linear infinite
+                    // white-space: nowrap;
+                    animation: marquee 10s linear infinite
 
                 }
            }
@@ -569,8 +570,8 @@
     // 100%{
     //     transform: translateX(-80%);
     // }
-    from{transform: translateX(80%)}
-    to{transform: translateX(-80%)}
+    from{transform: translateX(90%)}
+    to{transform: translateX(-90%)}
 }
 
 //full

@@ -464,6 +464,7 @@
   position: relative;
 }
 .body_store .store .card .cardimg .im1 {
+  height: 286px;
   position: absolute;
   transition: opacity 0.8s ease-in-out;
 }
@@ -483,19 +484,17 @@
   overflow: hidden;
 }
 .body_store footer .ft .fth2 .mar {
-  display: inline-block;
   margin: 0;
   color: var(--textcolor50);
-  white-space: nowrap;
-  animation: marquee 5s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 @keyframes marquee {
   from {
-    transform: translateX(80%);
+    transform: translateX(90%);
   }
   to {
-    transform: translateX(-80%);
+    transform: translateX(-90%);
   }
 }
 .body_full {
