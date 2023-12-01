@@ -28,6 +28,7 @@ $(function(){
                 location.href="./index.html";
                 // $("#show").html("會員");
             }else{
+                alert("帳號密碼錯誤");
                 // console.log("失敗");
                 
             }
