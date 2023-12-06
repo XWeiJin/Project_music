@@ -42,3 +42,12 @@ $(function(){
     
 
 });
+
+let show=document.querySelector("header");
+window.addEventListener("scroll",()=>{
+    if(scrollY!=0){
+        show.style="box-shadow: 3px 3px 5px 1px #757474;";
+    }else{
+        show.style.boxShadow="none";
+    }
+})
