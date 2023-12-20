@@ -819,3 +819,39 @@
         
     }
 }
+
+.body_shop{
+    
+    margin: 0;
+    background: linear-gradient(rgba(150,100,100,0.6),rgba(255,255,255,0.5));
+    background-repeat: no-repeat;
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: #fff;
+        // box-shadow: 3px 3px 5px 1px #757474;
+    }
+    main{
+        font-family: "標楷體";
+        height: 100%;
+        .cart-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            h1{
+                color: var(--textcolor21);
+            }
+            .cart-item {
+                border: 1px solid var(--textcolor28);
+                // padding: 10px;
+                margin-bottom: 10px;
+                height: 50px;
+                p{
+                    color: var(--textcolor04);
+                    line-height: 50px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

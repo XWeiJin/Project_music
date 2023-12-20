@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/Color.css">
+    <link rel="stylesheet" href="./topics.css">
+    <!-- 這裡省略了部分CSS，包含購物車內容的樣式 -->
+    <!-- <style>
+        這裡省略了部分CSS，包含購物車內容的樣式
+        .cart-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cart-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style> -->
+</head>
+<body class="body_shop">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light " >
+          <div class="container-fluid">
+            <a class="navbar-brand text-info" href="./index.html">W-Music</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./topics_music.html" target="_self">音樂</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./member.html">登入/註冊</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./store.html" target="_self">商店</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./shopping.html" target="_self">購物車</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cart-container">
+                        <h1>購物車內容</h1>
+                        <div id="cartContent">
+                            <!-- 購物車內容將在這裡顯示 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 獲取本地存儲中的購物車內容
+            const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
+
+            const cartContentContainer = document.getElementById('cartContent');
+
+            if (cartContent.length === 0) {
+                cartContentContainer.innerHTML = '<p>購物車是空的</p>';
+            } else {
+                cartContent.forEach(item => {
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'cart-item';
+                    cartItemElement.innerHTML = `<p>${item.name} - 數量: ${item.quantity}</p>`;
+                    cartContentContainer.appendChild(cartItemElement);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

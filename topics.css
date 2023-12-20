@@ -710,4 +710,36 @@
   .body_mem .row_me .box2 .bt {
     margin-top: 2.5rem;
   }
+}
+.body_shop {
+  margin: 0;
+  background: linear-gradient(rgba(150, 100, 100, 0.6), rgba(255, 255, 255, 0.5));
+  background-repeat: no-repeat;
+}
+.body_shop header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+.body_shop main {
+  font-family: "標楷體";
+  height: 100%;
+}
+.body_shop main .cart-container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.body_shop main .cart-container h1 {
+  color: var(--textcolor21);
+}
+.body_shop main .cart-container .cart-item {
+  border: 1px solid var(--textcolor28);
+  margin-bottom: 10px;
+  height: 50px;
+}
+.body_shop main .cart-container .cart-item p {
+  color: var(--textcolor04);
+  line-height: 50px;
+  margin-left: 10px;
 }/*# sourceMappingURL=topics.css.map */
