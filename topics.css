@@ -736,10 +736,17 @@
 .body_shop main .cart-container .cart-item {
   border: 1px solid var(--textcolor28);
   margin-bottom: 10px;
-  height: 50px;
+  height: 100px;
 }
 .body_shop main .cart-container .cart-item p {
   color: var(--textcolor04);
-  line-height: 50px;
+  margin-top: 5px;
   margin-left: 10px;
+}
+.body_shop main .cart-container .cart-item button {
+  color: var(--textcolor02);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 3px;
+  background-color: var(--textcolor28);
 }/*# sourceMappingURL=topics.css.map */

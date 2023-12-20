@@ -45,7 +45,7 @@
                   <a class="nav-link" href="./store.html" target="_self">商店</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./shopping.html" target="_self">購物車</a>
+                  <a class="nav-link active" href="./shopping.html" target="_self">購物車</a>
                 </li>
               </ul>
             </div>
@@ -61,14 +61,17 @@
                         <div id="cartContent">
                             <!-- 購物車內容將在這裡顯示 -->
                         </div>
+                        <div id="totalQuantity">
+                            <!-- 總數量 -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
-
-    <script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             // 獲取本地存儲中的購物車內容
             const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
@@ -85,6 +88,73 @@
                     cartContentContainer.appendChild(cartItemElement);
                 });
             }
+        });
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartContentContainer = document.getElementById('cartContent');
+            const totalQuantityContainer = document.getElementById('totalQuantity');
+
+            function renderCart() {
+                // 獲取本地存儲中的購物車內容
+                const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
+
+                cartContentContainer.innerHTML = '';
+
+                if (cartContent.length === 0) {
+                    cartContentContainer.innerHTML = '<p>購物車是空的</p>';
+                } else {
+                    let totalQuantity = 0; // 初始化總數量
+                    cartContent.forEach((item, index) => {
+                        const cartItemElement = document.createElement('div');
+                        cartItemElement.className = 'cart-item';
+                        cartItemElement.innerHTML = `
+                            <p>${item.name} - 數量: ${item.quantity}</p>
+                            <button onclick="updateQuantity(${index}, -1)">減少數量</button>
+                            <button onclick="updateQuantity(${index}, 1)">增加數量</button>
+                            <button onclick="removeFromCart(${index})">刪除</button>
+                        `;
+                        cartContentContainer.appendChild(cartItemElement);
+                        // 累加每個商品的數量到總數量
+                        totalQuantity += item.quantity;
+                    });
+                    // 添加顯示總數量的元素
+                    totalQuantityContainer.innerHTML = `<p>總數量: ${totalQuantity}</p>`;
+                }
+            }
+
+            function updateQuantity(index, change) {
+                const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
+
+                if (cartContent[index]) {
+                    cartContent[index].quantity += change;
+                    if (cartContent[index].quantity < 1) {
+                        // 如果數量小於1，將商品從購物車中移除
+                        cartContent.splice(index, 1);
+                    }
+                    // 更新本地存儲中的購物車內容
+                    localStorage.setItem('cart', JSON.stringify(cartContent));
+                    // 重新渲染購物車
+                    renderCart();
+                }
+            }
+
+            function removeFromCart(index) {
+            const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cartContent[index]) {
+                // 將商品從購物車中移除
+                cartContent.splice(index, 1);
+                // 更新本地存儲中的購物車內容
+                localStorage.setItem('cart', JSON.stringify(cartContent));
+                // 重新渲染購物車
+                renderCart();
+                }
+            }
+
+            // 初始化渲染購物車
+            renderCart();
+            // removeFromCart();
         });
     </script>
 </body>

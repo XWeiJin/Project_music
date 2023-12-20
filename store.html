@@ -161,29 +161,27 @@
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/jquery-3.7.1.min.js"></script>
     <script src="./JS/member.js"></script>
-       <script>
-        // 加入購物車的函數
-        function addToCart(productName) {
-            // 獲取本地存儲中的購物車內容，如果不存在，則初始化為空陣列
-            const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
+    <script>
+      // 加入購物車的函數
+      function addToCart(productName) {
+          // 獲取本地存儲中的購物車內容，如果不存在，則初始化為空陣列
+      const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
 
-            // 尋找商品是否已經在購物車中
-            const existingProductIndex = cartContent.findIndex(item => item.name === productName);
+      // 尋找商品是否已經在購物車中
+      const existingProductIndex = cartContent.findIndex(item => item.name === productName);
 
-            if (existingProductIndex !== -1) {
-                // 如果商品已經在購物車中，增加數量
-                cartContent[existingProductIndex].quantity++;
-            } else {
-                // 如果商品不在購物車中，將其添加到購物車中
-                cartContent.push({ name: productName, quantity: 1 });
-            }
-
-            // 更新本地存儲中的購物車內容
-            localStorage.setItem('cart', JSON.stringify(cartContent));
-
-            // 顯示提示或其他操作，例如彈出提示框
-            alert(`已將 ${productName} 添加到購物車`);
-        }
+      if (existingProductIndex !== -1) {
+        // 如果商品已經在購物車中，增加數量
+        cartContent[existingProductIndex].quantity++;
+      } else {
+        // 如果商品不在購物車中，將其添加到購物車中
+        cartContent.push({ name: productName, quantity: 1 });
+      }
+        // 更新本地存儲中的購物車內容
+      localStorage.setItem('cart', JSON.stringify(cartContent));
+      // 顯示提示或其他操作，例如彈出提示框
+      alert(`已將 ${productName} 添加到購物車`);
+      }
     </script>
 </body>
 </html>
