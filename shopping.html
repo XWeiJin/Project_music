@@ -71,25 +71,6 @@
     </main>
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/jquery-3.7.1.min.js"></script>
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // 獲取本地存儲中的購物車內容
-            const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
-
-            const cartContentContainer = document.getElementById('cartContent');
-
-            if (cartContent.length === 0) {
-                cartContentContainer.innerHTML = '<p>購物車是空的</p>';
-            } else {
-                cartContent.forEach(item => {
-                    const cartItemElement = document.createElement('div');
-                    cartItemElement.className = 'cart-item';
-                    cartItemElement.innerHTML = `<p>${item.name} - 數量: ${item.quantity}</p>`;
-                    cartContentContainer.appendChild(cartItemElement);
-                });
-            }
-        });
-    </script> -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const cartContentContainer = document.getElementById('cartContent');
@@ -100,7 +81,6 @@
                 const cartContent = JSON.parse(localStorage.getItem('cart')) || [];
 
                 cartContentContainer.innerHTML = '';
-
                 if (cartContent.length === 0) {
                     cartContentContainer.innerHTML = '<p>購物車是空的</p>';
                 } else {
@@ -110,17 +90,40 @@
                         cartItemElement.className = 'cart-item';
                         cartItemElement.innerHTML = `
                             <p>${item.name} - 數量: ${item.quantity}</p>
-                            <button onclick="updateQuantity(${index}, -1)">減少數量</button>
-                            <button onclick="updateQuantity(${index}, 1)">增加數量</button>
-                            <button onclick="removeFromCart(${index})">刪除</button>
+                            <button class="update-btn" data-index="${index}" data-change="-1">減少數量</button>
+                            <button class="update-btn" data-index="${index}" data-change="1">增加數量</button>
+                            <button class="remove-btn" data-index="${index}">刪除</button>
                         `;
                         cartContentContainer.appendChild(cartItemElement);
                         // 累加每個商品的數量到總數量
                         totalQuantity += item.quantity;
+                        
                     });
+                    ;
                     // 添加顯示總數量的元素
-                    totalQuantityContainer.innerHTML = `<p>總數量: ${totalQuantity}</p>`;
+                    totalQuantityContainer.innerHTML = '<p>總數量: '+totalQuantity+'</p>';
+
+                    
+                    // 為每個按鈕添加事件監聽器
+                    const updateButtons = document.querySelectorAll('.update-btn');
+                    updateButtons.forEach(button => {
+                        button.addEventListener('click', function () {
+                            const index = parseInt(button.dataset.index);
+                            const change = parseInt(button.dataset.change);
+                            updateQuantity(index, change);
+                        });
+                    });
+
+                    const removeButtons = document.querySelectorAll('.remove-btn');
+                    removeButtons.forEach(button => {
+                        button.addEventListener('click', function () {
+                            const index = parseInt(button.dataset.index);
+                            removeFromCart(index);
+                        });
+                    });
+                    
                 }
+                
             }
 
             function updateQuantity(index, change) {
