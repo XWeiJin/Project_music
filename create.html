@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/Color.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="" class="form-label">帳號</label>
+                            <input type="text" class="form-control" id="puser">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">密碼</label>
+                            <input type="text" class="form-control" min="0" max="100" id="ppass">
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-secondary">取消</button>
+                            <button class="btn btn-success" id="ok_btn">確認</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#ok_btn").click(function(){
+                console.log($("#puser").val());
+                console.log($("#ppass").val());
+
+                //ajax傳遞至後端
+                $.ajax({
+                    type: "POST",
+                    url: "http://127.0.0.1/05-Project/CreateDB.php",
+                    data: {puser: $("#puser").val(), ppass: $("#ppass").val()},
+                    success: showdata,
+                    error: function(){
+                        alert("錯誤!")
+                    }
+                });
+            });
+        });
+
+        function showdata(data){
+            console.log(data);
+            alert(data);
+            location.href = "member.html";
+        }
+    </script>
+</body>
+</html>
