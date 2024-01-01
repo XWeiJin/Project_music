@@ -42,7 +42,61 @@ $(function(){
     
 
 });
+// $(function(){
+//     $("#bt_not").bind("click",function(){
+//         // console.log("not");
+//         location.href="./member.html";
+//     });
 
+//     $("#checkbox").change(function(){
+//         console.log($(this).val());
+//         if($(this).is(':checked')){
+//             // console.log("同意");
+//             argee = true;
+//         }else{
+//             // console.log("不同意");
+//             argee = false;
+//         }
+//     })
+    
+//     function showdata(data) {
+//         var username = $("#user").val();
+//         var password = $("#pass").val();
+//         var validLogin = false;
+//         console.log(username);
+//         data.forEach(function(item) {
+//             console.log(item);
+//             if (item.user == username && item.password == password) {
+//                 validLogin = true;
+//                 return false; // 结束循环
+//             }
+//         });
+    
+//         if (validLogin) {
+//             alert("登入成功");
+//             location.href = "./index.php";
+//         } else {
+//             alert("帳號密碼錯誤");
+//         }
+//     }
+//     $("#bt_OK").bind("click", function() {
+//         if (argee == true) {
+//             $.ajax({
+//                 type: "GET",
+//                 url: "ReadDB.php",
+//                 dataType: "json",
+//                 async: false,
+//                 success: showdata,
+//                 error: function() {
+//                     alert("資料錯誤!");
+//                 }
+//             });
+//         } else {
+//             alert("請同意服務條款");
+//         }
+//     });
+
+// });
 let show=document.querySelector("header");
 window.addEventListener("scroll",()=>{
     if(scrollY!=0){
